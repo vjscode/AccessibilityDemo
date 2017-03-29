@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="demo.accessibility.customview.accessibilitydemo.MainActivity"
+    android:fitsSystemWindows="true"
+    android:contentDescription="Color view">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/colorView"/>
+
+    <demo.accessibility.customview.accessibilitydemo.navigation.NavigationView
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:id="@+id/navigation_view"
+        android:padding="0dp"
+        android:layout_gravity="bottom"/>
+</android.support.design.widget.CoordinatorLayout>
